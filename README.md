@@ -1,5 +1,7 @@
 # Pagekit
 
+View it in HTML. Export it as a document.
+
 Pagekit turns an HTML element into a Word `.docx` file. It runs in the browser. It does not call a server, and it does not run scripts from the HTML you give it.
 
 Phase 1 reads computed CSS and writes one `.docx`. The stack is [parse5](https://github.com/inikulin/parse5) 8.1.1 and [OpenXmlSdkTs](https://github.com/EricWhiteDev/OpenXmlSdkTs) 1.0.13, both pinned. OpenXmlSdkTs opens a small seed package and writes the WordprocessingML parts. JSZip (used under its MIT license) builds that seed. See `THIRD_PARTY_NOTICES.md`.
