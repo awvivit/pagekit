@@ -1,0 +1,37 @@
+{
+  "name": "pagekit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser-only library that turns an HTML element into a Word .docx file.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "demo": "vite --config vite.demo.config.ts",
+    "build:demo": "vite build --config vite.demo.config.ts"
+  },
+  "dependencies": {
+    "jszip": "3.10.2",
+    "openxmlsdkts": "1.0.13",
+    "parse5": "8.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.20.5",
+    "eslint": "10.15.0",
+    "jsdom": "31.0.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.73.0",
+    "vite": "8.3.8",
+    "vitest": "5.1.1"
+  }
+}

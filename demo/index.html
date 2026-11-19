@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor &amp; Pine bulletin — Pagekit demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <div>
+        <p class="mark">Pagekit</p>
+        <p class="hint">A made-up one-page bulletin. Nothing here is a real library.</p>
+      </div>
+      <button id="export" type="button">Export to Word</button>
+      <p id="status" role="status"></p>
+    </div>
+
+    <article id="page">
+      <p class="kicker">Field notes · March 2026</p>
+      <h1>Harbor &amp; Pine Library</h1>
+      <p class="lede">
+        The reading room looks out on a cedar trail that exists only in this sample.
+        <strong>Mara Ellison</strong> keeps the desk on Mondays, <em>Jonah Pell</em> covers Tuesdays,
+        and the <u>quiet hour</u> starts when the kettle boils.
+      </p>
+      <p>
+        Visitors can check the made-up hours at
+        <a href="https://example.com/harbor-pine/hours">example.com/harbor-pine/hours</a>.
+      </p>
+
+      <h2>This week on the trail</h2>
+      <ul>
+        <li>
+          Cedar loop
+          <ul>
+            <li>Look for the painted stone by the footbridge</li>
+            <li>Turn around at the split pine</li>
+          </ul>
+        </li>
+        <li>North meadow, if the boardwalk is dry</li>
+      </ul>
+
+      <h2>Story hour, in order</h2>
+      <ol>
+        <li>
+          Sign the ledger
+          <ol>
+            <li>Leave a note for the weekend clerk</li>
+          </ol>
+        </li>
+        <li>Choose a book from the green cart</li>
+        <li>Return it to the same cart</li>
+      </ol>
+
+      <h2>Desk hours</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Clerk</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Mara Ellison</td>
+            <td>9 to 5</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Jonah Pell</td>
+            <td>11 to 6</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Both</td>
+            <td>1 to 4</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <aside class="callout">
+        <p>The map drawer is on the left. Flex layout is kept as ordinary paragraphs.</p>
+      </aside>
+
+      <p class="caption">
+        <img alt="A small drawing of a pine sprig" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" />
+        The line above is the picture’s alt text. The picture itself stays out of the Word file.
+      </p>
+    </article>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
