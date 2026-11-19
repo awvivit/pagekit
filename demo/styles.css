@@ -1,0 +1,150 @@
+:root {
+  color: #292524;
+  background: #efe7d6;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+body {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #1f4e3d;
+  color: #f7f3ea;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.mark {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hint,
+#status {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+#status:empty {
+  display: none;
+}
+
+button {
+  border: 0;
+  background: #f4efe2;
+  color: #1f4e3d;
+  font: 600 15px/1 "Segoe UI", system-ui, sans-serif;
+  padding: 12px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fff;
+}
+
+#page {
+  width: min(720px, calc(100% - 32px));
+  margin: 28px auto 64px;
+  padding: 48px 56px 56px;
+  background: #fffdf8;
+  color: #292524;
+  box-shadow: 0 18px 50px rgb(68 48 24 / 12%);
+}
+
+.kicker {
+  margin: 0 0 8px;
+  color: #9a3412;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 18px;
+  color: #1f4e3d;
+  font-size: 40px;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 28px 0 8px;
+  color: #1f4e3d;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+p,
+li {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.lede {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+a {
+  color: #9a3412;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e7e0d2;
+  font-size: 16px;
+}
+
+th {
+  color: #1f4e3d;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.callout {
+  display: flex;
+  margin-top: 28px;
+  padding: 12px 16px;
+  background: #f4efe2;
+  border-left: 4px solid #1f4e3d;
+}
+
+.callout p {
+  margin: 0;
+}
+
+.caption {
+  margin-top: 22px;
+  color: #57534e;
+  font-size: 15px;
+}
+
+img {
+  display: block;
+  width: 96px;
+  height: 12px;
+  margin-bottom: 8px;
+  background: #1f4e3d;
+}
